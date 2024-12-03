@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="customer.css">
+    <style>
+        /* Footer Styling */
+        footer {
+            width: 100%; /* Full width for footer */
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a; /* Dark footer background */
+            color: #ffa500; /* Orange text */
+            font-size: 14px;
+            font-weight: bold;
+            border-top: 2px solid #ffa500; /* Top border spans full width */
+            position: relative; /* Ensures it stays at the bottom */
+        }
+
+        /* Ensure body stretches full height */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            flex: 1; /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- Header Section -->
+        <header class="header">
+            <h2 id="welcomeMessage">Welcome, User</h2>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </header>
+
+        <!-- Contact Details Section -->
+        <section class="contact-section">
+            <h3>Contact Us</h3>
+            <p>If you have any questions, feel free to reach us at:</p>
+            <ul class="contact-info">
+                <li><strong>Email:</strong> support@parcelcompany.com</li>
+                <li><strong>Phone:</strong> +1-800-123-4567</li>
+                <li><strong>Address:</strong> 123 Logistics Avenue, City, Country</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Parcel Management System 📦
+    </footer>
+    <script src="customer.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #000; /* Black background */
+    background: url('parcel image.jpg') no-repeat center center fixed; /* Add background image */
+    background-size: cover;
+    color: #ffa500; /* Orange text */
+}
+
+/* Header Styling */
+.top-bar {
+    background-color: #ffa500; /* Orange background */
+    color: #000; /* Black text */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff8c00; /* Darker orange border */
+}
+
+.logout-button {
+    background-color: #000; /* Black button */
+    color: #ffa500; /* Orange text */
+    border: 2px solid #ffa500;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ffa500;
+    color: #000;
+}
+
+/* Welcome Message */
+.welcome-message {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Payment Container */
+.payment-container {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #1a1a1a; /* Dark gray background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.payment-container h3 {
+    text-align: center;
+    color: #ffa500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Input and Select Styling */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #ffa500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffa500;
+    background-color: #262626; /* Darker background for inputs */
+    color: #ffa500;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Error Messages */
+.error {
+    color: #ff4d4d; /* Red for error messages */
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #ffa500;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.secondary {
+    background-color: #333;
+    border: 1px solid #ffa500;
+    color: #ffa500;
+}
+
+.button:hover {
+    background-color: #ff8c00; /* Darker orange */
+    color: #fff;
+}
+
+.button.secondary:hover {
+    background-color: #ffa500;
+    color: #000;
+}
+
+/* Hidden Card Details */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Update</title>
+    <link rel="stylesheet" href="delivery.css">
+    <style>
+        /* Footer Styling */
+        footer {
+            width: 100%; /* Full width for footer */
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a; /* Dark footer background */
+            color: #ffa500; /* Orange text */
+            font-size: 14px;
+            font-weight: bold;
+            border-top: 2px solid #ffa500; /* Top border spans full width */
+            position: relative; /* Ensures it stays at the bottom */
+        }
+
+        /* Ensure body stretches full height */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            flex: 1; /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delivery Update</h1>
+    </header>
+
+    <main>
+        <section id="searchSection">
+            <h2>Search Booking</h2>
+            <label for="searchBookingId">Enter Booking ID:</label>
+            <input type="text" id="searchBookingId" placeholder="Enter Booking ID">
+            <button id="searchButton">Search</button>
+        </section>
+
+        <section id="errorMessage" style="display: none;">
+            <p>❌ Booking ID not found. Please try again.</p>
+        </section>
+
+        <section id="deliveryForm" style="display: none;">
+            <h2>Update Delivery Status</h2>
+            <p><strong>Booking ID:</strong> <span id="bookingId"></span></p>
+            <p><strong>Current Status:</strong> <span id="currentStatus"></span></p>
+
+            <label for="deliveryStatus">Update Status:</label>
+            <select id="deliveryStatus">
+                <option value="In Transit">In Transit</option>
+                <option value="Delivered">Delivered</option>
+            </select>
+
+            <button id="updateButton">Update Status</button>
+            <div id="confirmationMessage" style="display: none;">
+                <p>✔️ Delivery status updated successfully!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Parcel Management System 📦
+    </footer>
+
+    <script src="delivery.js"></script>
+</body>
+</html>

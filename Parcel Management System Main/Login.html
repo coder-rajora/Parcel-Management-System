@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+    <style>
+        /* Ensure the body takes full height and positions footer correctly */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            flex: 1; /* Takes available space above footer */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        footer {
+            width: 100%; 
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a; /* Dark footer background */
+            color: #ffa500; /* Orange text */
+            font-size: 14px;
+            font-weight: bold;
+            border-top: 2px solid #ffa500; /* Top border for separation */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <small class="error" id="usernameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small class="error" id="passwordError"></small>
+            </div>
+            <div class="role-buttons">
+                <button type="button" id="userLogin">Login as User</button>
+                <button type="button" id="officerLogin">Login as Officer</button>
+            </div>
+        </form>
+        <p class="register-link">
+            New here? <a href="registration.html">Register now</a>
+        </p>
+    </div>
+    <footer>
+        &copy; 2024 Parcel Management System 📦
+    </footer>
+    <script src="Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #000; /* Black background */
+    background: url('parcel image.jpg') no-repeat center center fixed; /* Add background image */
+    background-size: cover;
+    color: #ffa500; /* Orange text */
+}
+
+/* Header Styling */
+header {
+    background-color: #ffa500; /* Orange header */
+    color: #000; /* Black text */
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff8c00; /* Darker orange border */
+}
+
+/* Main Content Styling */
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #1a1a1a; /* Dark gray container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #ffa500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff8c00; /* Subtle underline */
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffa500;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ffa500;
+    background-color: #262626;
+    color: #ffa500;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffa500;
+    color: #000;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Error and Confirmation Messages */
+#errorMessage p {
+    padding: 10px;
+    background-color: #ff4d4d; /* Red background for error */
+    color: #fff; /* White text */
+    border-radius: 5px;
+}
+
+#confirmationMessage p {
+    padding: 10px;
+    background-color: #32cd32; /* Green background for confirmation */
+    color: #fff; /* White text */
+    border-radius: 5px;
+    margin-top: 15px;
+}

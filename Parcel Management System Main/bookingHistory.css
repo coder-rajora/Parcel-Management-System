@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #000; /* Black background */
+    background: url('parcel image.jpg') no-repeat center center fixed; /* Add background image */
+    background-size: cover;
+    color: #ffa500; /* Orange text */
+}
+
+.main-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #1a1a1a; /* Dark gray for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffa500;
+}
+
+.header h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logout-button {
+    background-color: #ffa500;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
+
+/* History Section */
+.history-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.history-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.details-box {
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffa500;
+    background-color: #262626; /* Slightly lighter black */
+    color: #ffa500;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.details-box p {
+    margin: 5px 0;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #ffa500;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:disabled {
+    background-color: #555; /* Gray for disabled state */
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
